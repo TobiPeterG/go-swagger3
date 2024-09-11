@@ -23,6 +23,7 @@ var GoTypesOASFormats = map[string]string{
 	"float64": "double",
 	"string":  "string",
 	"error":   "error",
+	"interface{}": "object",
 }
 
 var BasicGoTypes = map[string]bool{
@@ -46,6 +47,7 @@ var BasicGoTypes = map[string]bool{
 	"rune":       true,
 	"uintptr":    true,
 	"error":      true,
+	"interface{}": true,
 }
 
 var GoTypesOASTypes = map[string]string{
@@ -64,6 +66,7 @@ var GoTypesOASTypes = map[string]string{
 	"float64": "number",
 	"string":  "string",
 	"error":   "error",
+	"interface{}": "object",
 }
 
 func IsMainFile(path string) bool {
